@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="stylesgallery.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+
+  <title>Y BRO - Gallery</title>
+</head>
+<body>
+
+    <section id="header">
+        <div class="logo">
+            <a href="index.html"><img src="Logo.png" alt="" width="15%"></a>
+            <a href="index.html" class="bro">
+                <p>BRO</p>
+            </a>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="login.html">Signup/Login</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <!-- The grid: four columns -->
+
+    <h1>Design Gallery</h1>
+    <hr>
+<div class="row">
+    <div class="column">
+      <img src="p1.jpg" alt="" width="50%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="p2.avif" alt="" width="50%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="p3.jpg" alt="" width="50%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="p4.jpg" alt="" width="150px" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:80%" height="80%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+
+
+
+     
+        <script src="scriptgallery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
